@@ -21,17 +21,18 @@ public class Exercise03 {
         String correctPass = "sebas01";
 
         if (correctUser.equals(user) && correctPass.equals(pass)) {
-            System.out.println(greetings("Sebas"));
+            System.out.println(greetings(correctUser));
         }else{
-            System.out.println(error("Sebas"));
+            System.out.println(error(correctUser));
         }
 
     }
 
 
     public static void main(String[] args) {
-        System.out.println(greetings("Sebas"));
-        System.out.println(error("Sebas"));
+        //System.out.println(greetings("Sebas"));
+        //System.out.println(error("Sebas"));
         checkUser("Sebas","sebas01");
+        checkUser("Oscar", "Oscar01");
     }
 }
